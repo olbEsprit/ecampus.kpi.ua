@@ -10,5 +10,11 @@ namespace Site.Controllers
         {
             return View();
         }
+
+        [Authorize]
+        public ActionResult Support()
+        {
+            return View();
+        }
     }
 }

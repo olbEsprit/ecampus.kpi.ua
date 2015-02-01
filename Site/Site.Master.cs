@@ -1,7 +1,6 @@
 ﻿using Core;
 using System;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 
@@ -13,47 +12,11 @@ namespace Site
         {
             get { return this.Page as SitePage; }
         }
-
-        protected string JSPath
-        {
-            get
-            {
-                return HttpContext.Current.IsDebuggingEnabled ? "" : "min";
-            }
-        }
-
-        public string Position
-        {
-            get
-            {
-                var e = this.SitePage.CurrentUser.Employees.FirstOrDefault();
-                return e == null ? String.Empty : e.Position;
-            }
-        }
-
-        public string AcademicDegree
-        {
-            get
-            {
-                var e = this.SitePage.CurrentUser.Employees.FirstOrDefault();
-                return e == null ? String.Empty : e.AcademicDegree;
-            }
-        }
-
-        public string UserPhoto
-        {
-
-            get { return this.SitePage.CurrentUser.Photo; }
-        }
-
-        public string UserFullName
-        {
-            get { return this.SitePage.CurrentUser.FullName; }
-        }
-
+        
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
+
             try
             {
                 UserName.Text = SitePage.CurrentUser.FullName;
@@ -74,7 +37,7 @@ namespace Site
 
                 CampusSessionId.Value = (this.Page as SitePage).SessionId;
 
-                // individual_plan.Visible = SitePage.CurrentUser.Employees.Any(o => o.Position.Contains("Викладач"));
+                individual_plan.Visible = SitePage.CurrentUser.Employees.Any(o => o.Position.Contains("Викладач"));
             }
             catch
             {
