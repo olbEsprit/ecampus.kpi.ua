@@ -12,7 +12,7 @@ Automatic synced with **cloud** branch: http://campus-portal.azurewebsites.net/l
 |-------|----------|------------------|
 | 2     | 21       | Мелкумян К.Ю.    |
 | 123   | 123      | Савицкий А.Й.    |
-| 1     | 1        | Свинаренко Д.А   |
+| 1     | 12       | Свинаренко Д.А   |
 | tua   | tua      | Тимошин Ю.А.     |
 | gob   | gob      | Габзовская О.Б.  |
 | vam   | vam      | Волокита В.Б.    |
@@ -26,3 +26,7 @@ Automatic synced with **cloud** branch: http://campus-portal.azurewebsites.net/l
 * API endpoint: http://campus-api.azurewebsites.net
 * API debug tool: http://campus-tools.azurewebsites.net/
 * API debug tool source code: https://github.com/DOIS/campus.sdk.js/blob/master/index.html
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/DOIS/ecampus.kpi.ua/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
